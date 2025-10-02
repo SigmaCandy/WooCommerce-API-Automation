@@ -1,0 +1,8 @@
+from woocommerce import API
+
+wcapi = API(
+    url="https://yourstore.com",
+    consumer_key="ck_XXXXXXXXXXXXXXXXXXXX",
+    consumer_secret="cs_XXXXXXXXXXXXXXXXXXXX",
+    version="wc/v3"
+)
