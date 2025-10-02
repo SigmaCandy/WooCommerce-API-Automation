@@ -1,0 +1,5 @@
+update_data = {
+    "regular_price": "24.99"
+}
+response = wcapi.put("products/123", update_data).json()
+print(response)
