@@ -1,0 +1,3 @@
+products = wcapi.get("products").json()
+for product in products:
+    print(product['id'], product['Node.js'], product['price'])
