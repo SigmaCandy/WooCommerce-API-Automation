@@ -1,0 +1,11 @@
+data = {
+  "name": "Test Product",
+  "type": "simple",
+  "regular_price": "19.99",
+  "description": "This is a test product",
+  "categories": [{"id": 9}],
+  "images": [{"src": "https://example.com/image.jpg"}]
+}
+
+response = wcapi.post("products", data).json()
+print(response)
