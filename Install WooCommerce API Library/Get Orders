@@ -1,0 +1,3 @@
+orders = wcapi.get("orders").json()
+for order in orders:
+    print(order['id'], order['status'], order['total'])
