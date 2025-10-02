@@ -1,0 +1,25 @@
+order_data = {
+  "payment_method": "bacs",
+  "payment_method_title": "Direct Bank Transfer",
+  "set_paid": True,
+  "billing": {
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john@example.com",
+    "phone": "1234567890",
+    "address_1": "123 Street",
+    "city": "City",
+    "state": "State",
+    "postcode": "12345",
+    "country": "US"
+  },
+  "line_items": [
+    {
+      "product_id": 123,
+      "quantity": 1
+    }
+  ]
+}
+
+response = wcapi.post("orders", order_data).json()
+print(response)
